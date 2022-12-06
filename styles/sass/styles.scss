@@ -1,12 +1,7 @@
 @use "partials/normalize";
 @use "partials/variables" as *;
+/* basic style partial includes base body width and wrapper */
+@use "partials/basicStyles";
 @use "partials/typography";
 @use "partials/mediaQueries";
 
-h1 {
-    font-family: $montFont;
-}
-
-h2 {
-    font-family: $bodyFont
-}

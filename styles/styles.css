@@ -259,6 +259,16 @@ img {
 /* Color and such variables declaring from Style Guides */
 /* site fonts */
 /* site colours */
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 html {
   /* setting rem to 20px, assuming default 16px base.
   0.1rem is 2px */
@@ -315,10 +325,5 @@ p {
   letter-spacing: 0.015rem; /* 0.3px */
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-}
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-}
+/* Setting up as PC first */
+/* basic style partial includes base body width and wrapper */
