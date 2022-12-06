@@ -255,3 +255,19 @@ img {
   display: block;
   width: 100%;
 }
+
+/* Color and such variables declaring from Style Guides */
+/* site fonts */
+/* site colours */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+}

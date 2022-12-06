@@ -1,3 +1,12 @@
 @use "partials/normalize";
-@use "partials/variables";
+@use "partials/variables" as *;
+@use "partials/typography";
 @use "partials/mediaQueries";
+
+h1 {
+    font-family: $montFont;
+}
+
+h2 {
+    font-family: $bodyFont
+}
