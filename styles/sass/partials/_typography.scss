@@ -41,11 +41,21 @@ h2 {
 
 }
 
-.navText {
+/* navBar (navigation menu) text */
+.navBar li {
     font-family: $montFont;
     font-weight: 400; /* regular */
     font-size: 0.7rem; /* 14px */
     letter-spacing: 0.015rem; /* 0.3px */
+    text-transform: uppercase;
+}
+
+.logoText {
+    text-transform: uppercase;
+}
+
+a {
+    color: $black;
 }
 
 /* body style text */

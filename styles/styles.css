@@ -259,6 +259,7 @@ img {
 /* Color and such variables declaring from Style Guides */
 /* site fonts */
 /* site colours */
+/* Color for underlining navBar */
 body {
   max-width: 1280px;
   margin: 0 auto;
@@ -309,11 +310,21 @@ h2 {
   letter-spacing: 0.0349rem; /* about 0.7px */
 }
 
-.navText {
+/* navBar (navigation menu) text */
+.navBar li {
   font-family: "Montserrat", sans-serif;
   font-weight: 400; /* regular */
   font-size: 0.7rem; /* 14px */
   letter-spacing: 0.015rem; /* 0.3px */
+  text-transform: uppercase;
+}
+
+.logoText {
+  text-transform: uppercase;
+}
+
+a {
+  color: #333333;
 }
 
 /* body style text */
@@ -323,6 +334,66 @@ p {
   text-align: center;
   line-height: 1.2rem; /* 24px */
   letter-spacing: 0.015rem; /* 0.3px */
+}
+
+/* Navigation CSS from eCommerce code-along */
+.navBar {
+  position: sticky;
+  margin-top: 20px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar a:visited {
+  color: #333333;
+}
+
+.logoText {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.navContainer1,
+.navContainer2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.navContainer1 ul,
+.navContainer2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navContainer1 a,
+.navContainer2 a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(51, 51, 51, 0);
+          text-decoration-color: rgba(51, 51, 51, 0);
+  -webkit-transition: -webkit-text-decoration-color 0.3s;
+  transition: -webkit-text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+  /* underline navigation Text on hover and focus */
+}
+.navContainer1 a:hover, .navContainer1 a:focus,
+.navContainer2 a:hover,
+.navContainer2 a:focus {
+  -webkit-text-decoration-color: rgb(51, 51, 51);
+          text-decoration-color: rgb(51, 51, 51);
 }
 
 /* Setting up as PC first */
