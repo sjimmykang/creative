@@ -1,6 +1,58 @@
 @use "variables" as *;
 
+html {
+    /* setting rem to 20px, assuming default 16px base.
+    0.1rem is 2px */
+    font-size: 125%;
+}
+
 body {
+    /* Using Open Sans as default font */
     font-family: $bodyFont;
     font-weight: 400;
+    color: $black;
+}
+
+h1 {
+    font-family: $montFont;
+    font-weight: 700; /* bold */
+    font-size: 1.85rem; /* 37px */
+    text-align: center;
+    letter-spacing: 0.045rem; /* 0.9px */
+}
+
+h2 {
+    font-family: $montFont;
+    font-weight: 400; /* regular */
+    font-size: 0.9rem; /* 18px */
+    text-align: center;
+    line-height: 1.2rem; /* 24px */
+    letter-spacing: 0.09rem; /* 1.8px */
+}
+/* button text and nav text class styles premade. to be applied later */
+
+.buttonText {
+    font-family: $montFont;
+    font-weight: 700; /* bold */
+    font-size: 0.7rem; /* 14px */
+    text-align: center;
+    line-height: 1.2rem; /* 24px */
+    letter-spacing: 0.0349rem; /* about 0.7px */
+
+}
+
+.navText {
+    font-family: $montFont;
+    font-weight: 400; /* regular */
+    font-size: 0.7rem; /* 14px */
+    letter-spacing: 0.015rem; /* 0.3px */
+}
+
+/* body style text */
+p {
+    /* OpenSans font family, font weight inherited from body */
+    font-size: 0.7rem; /* 14px */
+    text-align: center;
+    line-height: 1.2rem; /* 24px */
+    letter-spacing: 0.015rem; /* 0.3px */
 }
