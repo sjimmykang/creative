@@ -247,6 +247,7 @@ button {
 button {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 img {
@@ -308,6 +309,7 @@ h2 {
   text-align: center;
   line-height: 1.2rem; /* 24px */
   letter-spacing: 0.09rem; /* 1.8px */
+  text-transform: uppercase;
 }
 
 /* button text and nav text class styles premade. to be applied later */
@@ -454,6 +456,120 @@ header.contact {
 .navIcon {
   width: 1rem;
   height: 1rem;
+}
+
+/* =-=-=-=-=- Index page Main -=-=-=-=-= */
+/* ---------- branding section --------- */
+.branding {
+  background-color: #c3dab7;
+}
+
+.brandingContainer {
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brandingImageContainer {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  width: 50%;
+  top: -35%;
+  left: -20%;
+}
+
+.brandingTextContainer {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brandingText1,
+.brandingText2 {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.brandingText1 p,
+.brandingText2 p {
+  margin-top: 20px;
+}
+
+/* ---------- gallery section --------- */
+.galleryContainer {
+  padding: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galleryContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+.galleryContent p {
+  margin-top: 40px;
+}
+
+.arrowIcon {
+  padding: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transition: padding 0.3s;
+  transition: padding 0.3s;
+}
+.arrowIcon:hover, .arrowIconfocus {
+  padding: 0;
+}
+
+.galleryImageContainer {
+  width: 40%;
+}
+.galleryImageContainer img {
+  /* https: //www.webfx.com/blog/web-design/circular-images-css/
+  using the border radius 50% found on the website to make circular image
+  */
+  border-radius: 50%;
 }
 
 /* Setting up as PC first */

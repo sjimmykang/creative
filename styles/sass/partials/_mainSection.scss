@@ -1,0 +1,88 @@
+@use "variables" as *;
+
+/* =-=-=-=-=- Index page Main -=-=-=-=-= */
+/* ---------- branding section --------- */
+.branding {
+    background-color: $lightSage;
+}
+
+.brandingContainer {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandingImageContainer {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    width: 50%;
+    top: -35%;
+    left: -20%;
+}
+
+.brandingTextContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brandingText1,
+.brandingText2 {
+    flex-basis: 45%;
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+/* ---------- gallery section --------- */
+.galleryContainer {
+    padding: 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleryContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    p {
+        margin-top: 40px;
+    }
+}
+
+.arrowIcon {
+    padding: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    transition: padding 0.3s;
+
+    &:hover,
+    &focus {
+        padding: 0;
+    }
+}
+
+.galleryImageContainer {
+    width: 40%;
+
+    img {
+        /* https: //www.webfx.com/blog/web-design/circular-images-css/
+        using the border radius 50% found on the website to make circular image
+        */
+        border-radius: 50%;
+    }
+}
+
+
