@@ -1,0 +1,92 @@
+/* Navigation CSS from eCommerce code-along */
+@use "variables" as *;
+
+/* Header Styles */
+header.home {
+    background-image: url(../assets/home-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header.blog {
+    background-image: url(../assets/blog-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+header.contact {
+    background-image: url(../assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+    height: 40vh;
+}
+
+.contact .navBar {
+    background-color: $white;
+}
+
+
+.navBar {
+    /* position sticky, top 0, z-index from eShop code along to make sticky navbar */
+    // position: sticky;
+    // top: 0;
+    // z-index: 10;
+
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+
+
+.navBar a {
+    &:visited{
+        color: $black;
+    }
+}
+.logoText {
+    flex-basis: 30%;
+}
+.navContainer1,
+.navContainer2 {
+    flex-basis: 25%;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    a {
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.3s;
+        
+        /* underline navigation Text on hover and focus */
+        &:hover,
+        &:focus {
+            text-decoration-color: $black;
+        }
+    }
+}
+
+/* .svg Styles in basicStyles partial */
+
+.navIcon {
+    width: 1rem;
+    height: 1rem;
+}

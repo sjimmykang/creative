@@ -259,15 +259,25 @@ img {
 /* Color and such variables declaring from Style Guides */
 /* site fonts */
 /* site colours */
-/* Color for underlining navBar */
 body {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
 .wrapper {
+  max-width: 1440px;
   width: 80%;
   margin: 0 auto;
+}
+
+.svg {
+  /* used in Assignment1 as well to color svg icons:
+  https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+
+  codePen for hex to css filter:
+  https: //codepen.io/sosuke/pen/Pjoqqp
+  */
+  -webkit-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(96%) contrast(87%);
+          filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(96%) contrast(87%);
 }
 
 html {
@@ -337,10 +347,37 @@ p {
 }
 
 /* Navigation CSS from eCommerce code-along */
+/* Header Styles */
+header.home {
+  background-image: url(../assets/home-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header.blog {
+  background-image: url(../assets/blog-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header.contact {
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-position-y: 70px;
+  height: 40vh;
+}
+
+.contact .navBar {
+  background-color: #ffffff;
+}
+
 .navBar {
-  position: sticky;
-  margin-top: 20px;
-  z-index: 10;
+  /* position sticky, top 0, z-index from eShop code along to make sticky navbar */
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,6 +386,22 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navBar a:visited {
@@ -381,8 +434,9 @@ p {
 .navContainer1 a,
 .navContainer2 a {
   text-decoration: underline;
-  -webkit-text-decoration-color: rgba(51, 51, 51, 0);
-          text-decoration-color: rgba(51, 51, 51, 0);
+  text-underline-offset: 0.3rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
   -webkit-transition: -webkit-text-decoration-color 0.3s;
   transition: -webkit-text-decoration-color 0.3s;
   transition: text-decoration-color 0.3s;
@@ -392,8 +446,14 @@ p {
 .navContainer1 a:hover, .navContainer1 a:focus,
 .navContainer2 a:hover,
 .navContainer2 a:focus {
-  -webkit-text-decoration-color: rgb(51, 51, 51);
-          text-decoration-color: rgb(51, 51, 51);
+  -webkit-text-decoration-color: #333333;
+          text-decoration-color: #333333;
+}
+
+/* .svg Styles in basicStyles partial */
+.navIcon {
+  width: 1rem;
+  height: 1rem;
 }
 
 /* Setting up as PC first */
