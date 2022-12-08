@@ -270,6 +270,12 @@ body {
   margin: 0 auto;
 }
 
+.wrapperSmall {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .svg {
   /* used in Assignment1 as well to color svg icons:
   https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
@@ -302,13 +308,29 @@ h1 {
   letter-spacing: 0.045rem; /* 0.9px */
 }
 
+/* Text like "MEET OUR TEAM" seem bigger text than header style, 
+ so although its not in style guide added this. */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400; /* regular */
-  font-size: 0.9rem; /* 18px */
+  font-size: 1.2rem; /* 24px */
   text-align: center;
   line-height: 1.2rem; /* 24px */
-  letter-spacing: 0.09rem; /* 1.8px */
+  letter-spacing: 0.1rem; /* 2px */
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /* regular */
+  font-size: 0.9rem;
+  /* 18px */
+  text-align: center;
+  line-height: 1.2rem;
+  /* 24px */
+  letter-spacing: 0.09rem;
+  /* 1.8px */
   text-transform: uppercase;
 }
 
@@ -570,6 +592,71 @@ header.contact {
   using the border radius 50% found on the website to make circular image
   */
   border-radius: 50%;
+}
+
+/* ---------- detail section --------- */
+.detail {
+  background-image: url(../assets/home-4.jpeg);
+  background-size: cover;
+}
+
+.detailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.detailHalfContainer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10% 0;
+}
+
+.detailIndividualContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48.5%;
+  padding-top: 10%;
+}
+
+.detailIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.detailIndividualTextContainer {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detailIndividualTextContainer h3 {
+  text-align: left;
+}
+.detailIndividualTextContainer p {
+  text-align: left;
+  color: #626262;
 }
 
 /* Setting up as PC first */

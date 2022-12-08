@@ -85,4 +85,50 @@
     }
 }
 
+/* ---------- detail section --------- */
+.detail {
+    background-image: url(../assets/home-4.jpeg);
+    background-size: cover;
+}
 
+.detailContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+.detailHalfContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10% 0;
+}
+
+.detailIndividualContainer {
+    display: flex;
+    width: 48.5%;
+    padding-top: 10%;
+}
+
+.detailIcon {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border: 2px solid $black;
+    border-radius: 50%;
+}
+
+.detailIndividualTextContainer {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        color: $grey;
+    }
+}
