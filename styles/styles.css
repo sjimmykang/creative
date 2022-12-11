@@ -831,5 +831,12 @@ header.contact {
   display: flex;
 }
 
+/* ----------------- footer ---------------- */
+footer {
+  padding: 5% 0;
+  background-color: #626262;
+  color: #f6f6f6;
+}
+
 /* Setting up as PC first */
 /* basic style partial includes base body width and wrapper */
