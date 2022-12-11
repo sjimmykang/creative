@@ -659,5 +659,177 @@ header.contact {
   color: #626262;
 }
 
+/* ---------- team section --------- */
+.teamContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10% 0;
+}
+
+.teamGalleryContainer1,
+.teamGalleryContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.textBackground {
+  background-color: rgb(231, 242, 253);
+}
+
+.teamDoubleSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 1rem);
+}
+
+.teamSingleSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(25% - 1rem);
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.teamSingleSizeFirst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(25% - 1rem);
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* ---------- inquire section --------- */
+.inquire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inquireHalf1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  background-color: #c3dab7;
+}
+.inquireHalf1 p {
+  color: #626262;
+}
+.inquireHalf1 a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.inquireHalf2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+/* ---------- contactUs section --------- */
+.contactUsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10% 0;
+}
+
+.contactUsRow1,
+.contactUsRow2,
+.contactUsRow3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32%;
+}
+.contactUsRow1 h3,
+.contactUsRow2 h3,
+.contactUsRow3 h3 {
+  padding-bottom: 1rem;
+}
+
+.contactUsRow1 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contactUsRow1 p {
+  text-align: left;
+}
+.contactUsRow1 span::after {
+  content: "\a";
+  white-space: pre;
+  line-break: strict;
+}
+
+.contactUsRow3 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contactUsRow3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contactUsRow3 label {
+  text-align: right;
+}
+
+.emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* Setting up as PC first */
 /* basic style partial includes base body width and wrapper */
