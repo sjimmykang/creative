@@ -509,6 +509,19 @@ header.contact {
 /* ---------- branding section --------- */
 .branding {
   background-color: #c3dab7;
+  position: relative;
+}
+
+.verticalLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 5vh;
+  border-right: 1px solid #b9b9b9;
+}
+
+.topLine {
+  top: -5vh;
 }
 
 .brandingContainer {
@@ -596,6 +609,8 @@ header.contact {
 }
 .galleryContent p {
   margin-top: 40px;
+  color: #A0A0A0;
+  font-style: italic;
 }
 
 .arrowIcon {
@@ -697,6 +712,10 @@ header.contact {
 }
 
 /* ---------- team section --------- */
+.team {
+  position: relative;
+}
+
 .teamContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,7 +741,7 @@ header.contact {
 }
 
 .textBackground {
-  background-color: rgb(231, 242, 253);
+  background-color: #E6E6E6;
 }
 
 .teamDoubleSize {
@@ -992,12 +1011,12 @@ footer h2 {
 }
 
 .afterSlash a {
-  color: #626262;
+  color: #A0A0A0;
 }
 .afterSlash::after {
   content: "/";
   margin: 0 0.5rem;
-  color: #626262;
+  color: #A0A0A0;
 }
 
 .blogPostDetail {
@@ -1047,7 +1066,7 @@ footer h2 {
   text-align: left;
 }
 .blogPostDetailText p {
-  color: #626262;
+  color: #A0A0A0;
 }
 
 .blogPostDetailContent {
@@ -1061,12 +1080,13 @@ footer h2 {
 }
 .blogPostDetailContent h3 {
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   text-transform: none;
   text-align: left;
   margin-bottom: 1rem;
 }
 .blogPostDetailContent p {
-  color: #626262;
+  color: #A0A0A0;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -1079,7 +1099,7 @@ footer h2 {
 .blogPostDetailSocial p {
   text-transform: uppercase;
   font-size: 1rem;
-  color: #626262;
+  color: #A0A0A0;
 }
 
 .blogSvg {
@@ -1190,7 +1210,7 @@ footer h2 {
   content: " • ";
 }
 .userNameContainer a {
-  color: #626262;
+  color: #A0A0A0;
 }
 
 .commentContent p {
@@ -1202,7 +1222,7 @@ footer h2 {
   font-family: "Montserrat", sans-serif;
   text-align: left;
   padding-top: 1rem;
-  color: #626262;
+  color: #A0A0A0;
 }
 
 /* Leave a Comment form styles.*/
@@ -1308,6 +1328,9 @@ footer h2 {
 }
 .contactPageDetail p {
   text-align: left;
+  color: #A0A0A0;
+}
+.contactPageDetail .greyText {
   color: #626262;
 }
 .contactPageDetail .wrapper {

@@ -4,6 +4,19 @@
 /* ---------- branding section --------- */
 .branding {
     background-color: $lightSage;
+    position: relative;
+}
+
+.verticalLine {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 5vh;
+    border-right: 1px solid $greyLine;
+}
+
+.topLine {
+    top: -5vh;
 }
 
 .brandingContainer {
@@ -59,6 +72,8 @@
 
     p {
         margin-top: 40px;
+        color: $grey160;
+        font-style: italic;
     }
 }
 
@@ -142,6 +157,9 @@
 }
 
 /* ---------- team section --------- */
+.team {
+    position: relative;
+}
 .teamContainer {
     display: flex;
     flex-direction: column;
@@ -157,7 +175,7 @@
 }
 
 .textBackground {
-    background-color: rgb(231, 242, 253);
+    background-color: $grey230;
 }
 
 .teamDoubleSize {
