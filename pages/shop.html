@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
         rel="stylesheet">
 
+    <!-- FontAwesome kit code -->
+    <script src="https://kit.fontawesome.com/e354ddc77c.js" crossorigin="anonymous"></script>
+
+
     <!-- Link style sheet -->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Creative Homepage</title>
@@ -58,11 +62,18 @@
                             <a href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a href=""><img src="../assets/magnifying-glass-solid.svg" alt="navigation search" class="svg navIcon"></a>
+                            <!-- all svg icons from FontAwesome:
+                                                    https://fontawesome.com/icons -->
+                            <a href=""><i class="fa-solid fa-magnifying-glass svg navIcon"></i></a>
                         </li>
                         <li>
-                            <a href=""><img src="../assets/bag-shopping-solid.svg" alt="shopping cart page" class="svg navIcon"></a>
-                            <!-- possibly add item counter bubble later -->
+                            <a href="">
+                                <i class="fa-solid fa-bag-shopping svg navIcon shoppingContainer"></i>
+
+                                <div class="shoppingCounter">
+                                    <p>2</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div> <!-- end of navContainer2 -->
@@ -72,6 +83,78 @@
     </header>
 
     <h2>nothing else made</h2>
+
+    <main>
+        <section class="contactUs">
+            <div class="wrapper contactUsContainer">
+                <div class="contactUsRow1">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <span>6591 Orchard Street, NY 10002, United States</span>
+                        <span>Email: contactonepro.co</span>
+                        <span>Phone 01: +00(9) 123 3456 789</span>
+                        <span>Phone 02: +00(9) 123 3456 789</span>
+                        <span>Fax: 00(9) 654 6543 989</span>
+                    </p>
+                    <div class="contactUsSocialMedia">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f contactUsSvg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter contactUsSvg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram contactUsSvg"></i>
+                        </a>
+                        <a href="https://github.com/sjimmykang">
+                            <i class="fa-brands fa-github contactUsSvg"></i>
+                        </a>
+                    </div> <!-- end of socialMedia row1 -->
+                </div> <!-- end of contactUs row1 -->
+
+                <div class="contactUsRow2">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="">Conversion hackathon partner</a>
+                        </li>
+                        <li>
+                            <a href="">Network channels entrepreneur</a>
+                        </li>
+                        <li>
+                            <a href="">Return on investment creative</a>
+                        </li>
+                        <li>
+                            <a href="">Assets interaction design venture</a>
+                        </li>
+                        <li>
+                            <a href="">Infographic learning curve</a>
+                        </li>
+                    </ul>
+                </div> <!-- end of contactUs row2 -->
+
+                <div class="contactUsRow3">
+                    <h3>Twitter Widget</h3>
+                    <form action="#" method="#" class="subForm" name="subForm">
+                        <label for="emailAddress">Signup for emails and notifications below</label>
+
+                        <div class="emailContainer">
+                            <input type="text" id="emailAddress" name="emailAddress" placeholder="Enter your email">
+
+                            <button type="submit" class="subButton">
+                                <i class="fa-solid fa-right-long svg"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div> <!-- end of contactUs row3 -->
+            </div> <!-- end of contactUs wrapper container -->
+        </section> <!-- end of contact us -->
+    </main>
+
+    <footer>
+        <h2>Creative Agency</h2>
+    </footer>
+
 </body>
 
 </html>
