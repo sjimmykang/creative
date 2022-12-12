@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Creative Homepage</title>
     <!-- jimmykangProjectOne going PC first -->
+    <!-- blog page is largely just placeholder content just to make it look like the psd. could be reworked after learning React to actually include proper functions -->
 </head>
 
 <body>
@@ -82,9 +83,173 @@
 
     <main>
 
-        <section class="blogPost">
-            <div class="wrapper blogPostContainer">
-                <h1>how to run a creative agency</h1>
+        <section class="blogPost" id="blogPost">
+            <div class="wrapper">
+
+                <div class="blogPostContainer">
+                    <div class="blogPostTitle">
+
+                        <h1>how to run a creative agency</h1>
+                        <ul>
+                            <li class="afterSlash">
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="afterSlash">
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li >
+                                <a href="#blogPost">How to Run a Creative Agency</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="blogPostDetail">
+                        <div class="blogPostHalfContainer1">
+                            <div class="blogPostDetailImageContainer">
+                                <img src="../assets/blog-2.jpeg" alt="author profile picture">
+                            </div>
+                            <div class="blogPostDetailText">
+                                <h3>Alex</h3>
+                                <p>Administrator</p>
+                            </div>
+                        </div> <!-- end of blogPost First half -->
+
+                        <div class="blogPostHalfContainer2">
+                            <div class="blogPostDetailText">
+                                <h3>Date</h3>
+                                <p>July 31, 2018</p>
+                            </div>
+                            <div class="blogPostDetailText">
+                                <h3>Category</h3>
+                                <p>Entertainment, Business</p>
+                            </div>
+                            <div class="blogPostDetailText">
+                                <h3>Tags</h3>
+                                <p>Design, Web, Lifestyle, Site</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blogPostDetailContent">
+                        <h3>Analytics bandwidth Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, pariatur nisi illum facilis labore officia! Esse rerum at placeat soluta!</h3>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, adipisci.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut eaque mollitia accusantium veniam sint, soluta quod quae voluptate odit voluptatibus eveniet natus omnis minus, voluptates cumque laudantium magnam aliquid? A nesciunt exercitationem pariatur, earum praesentium eos deserunt ut eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa hic beatae necessitatibus vel laboriosam quaerat temporibus quis deserunt veritatis.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit perspiciatis, obcaecati corporis, sunt illum ipsum maiores tenetur, quo quas amet nobis porro ex? Corrupti eos cum excepturi ipsum tenetur.</p>
+                    </div>
+
+                    <div class="blogPostDetailSocial">
+                        <p>Share:</p>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f blogSvg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter blogSvg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram blogSvg"></i>
+                        </a>
+                    </div>
+
+                    <div class="relatedPostsContainer">
+                        <h2>related posts</h2>
+
+                        <div class="relatedPostsGallery">
+                            <div class="relatedPostsSingle">
+                                <a href="#">
+                                    <img src="../assets/blog-3.jpeg" alt="view of a desk with a laptop and plants with a window behind">
+                                    <p>July 25, 2018</p>
+                                </a>
+                            </div>
+
+                            <div class="relatedPostsSingle">
+                                <a href="#">
+                                    <img src="../assets/blog-4.jpeg" alt="view of table with plants and candles against a wall">
+                                    <p>July 26, 2018</p>
+                                </a>
+                            </div>
+
+                            <div class="relatedPostsSingle">
+                                <a href="#">
+                                    <img src="../assets/blog-5.jpeg" alt="top view of a table with a cactus, phone, laptop and coffee">
+                                    <p>July 28, 2018</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="relatedPostsComment">
+                            <h2>02 comments</h2>
+
+                            <div class="relatedPostsCommentContainer">
+                                <div class="relatedPostsCommentSingle">
+                                    <div class="commentImgContainer">
+                                        <img src="../assets/blog-6.jpeg" alt="user Profile Icon">
+                                    </div>
+                                    <div class="commentTextContainer">
+                                        <div class="userNameContainer">
+                                            <h3 class="userName">Daniel Vandraft</h3>
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="commentContent">
+                                            <p>Ecosystem awesome mmmm so much randome texts but I don't feel like using ipsum this time.</p>
+                                        </div>
+
+                                        <div class="commentTime">
+                                            <p>Jul 17, 2015 at 15 Hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relatedPostsCommentSingle">
+                                    <div class="commentImgContainer">
+                                        <img src="../assets/blog-7.jpeg" alt="user Profile Icon">
+                                    </div>
+                                    <div class="commentTextContainer">
+                                        <div class="userNameContainer">
+                                            <h3 class="userName">Jenifer Loopz</h3>
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="commentContent">
+                                            <p>Pitch agile development Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, necessitatibus.</p>
+                                        </div>
+
+                                        <div class="commentTime">
+                                            <p>Jul 17, 2015 at 15 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- copied form base from contactPageDetailText -->
+                            <div class="relatedPostsLeaveComment">
+                                <h2>Leave a Comment</h2>
+
+                            
+                                <form action="#" method="#" class="commentForm" name="commentForm">
+                                    <label for="commentForm" class="sr-only">enter your name, email, optional subject and message in this form to
+                                        leave a reply</label>
+                                    <div class="detailCommentContainer">
+                                        <div class="detailCommentLine1">
+                                            <input type="text" id="commentName" name="commentName" placeholder="Enter your name">
+                                            <input type="text" id="commentEmail" name="commentEmail" placeholder="youremail@domain.com">
+                                            <input type="text" id="commentSubject" name="commentSubject" placeholder="Subject (Optional)">
+                                        </div>
+                            
+                                        <textarea type="text" rows="5" id="commentContent" name="commentContent"
+                                            placeholder="Enter your comments here" class="commentContent"></textarea>
+                                    </div>
+                            
+                                    <button type="submit" class="commentButton">submit comment</button>
+                            
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!-- end of relatedPostsContainer -->
+
+
+                </div> <!-- end of blogPostContainer -->
 
             </div>
 

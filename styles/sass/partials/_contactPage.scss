@@ -71,8 +71,8 @@
 }
 
 .singleCenter {
-    border-left: 2px solid $grey160;
-    border-right: 2px solid $grey160;
+    border-left: 2px solid $grey230;
+    border-right: 2px solid $grey230;
 }
 /* .wideText in typography */
 
@@ -89,7 +89,7 @@
         font-size: 0.8rem;
         display: flex;
         border: none;
-        border-bottom: 2px solid $grey160;
+        border-bottom: 2px solid $grey230;
         transition: border-bottom 0.3s;
         margin-bottom: 1rem;
         padding-bottom: 0.25rem;
@@ -105,7 +105,7 @@
 .messageContent {
     outline: none;
     border: none;
-    border-bottom: 2px solid $grey160;
+    border-bottom: 2px solid $grey230;
     font-size: 0.8rem;
     transition: border-bottom 0.3s;
     margin-bottom: 2rem;
@@ -130,7 +130,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     color: $black;
-    border-bottom: 2px solid $grey160;
+    border-bottom: 2px solid $grey230;
     transition: border-bottom 0.3s;
 
     &:hover,

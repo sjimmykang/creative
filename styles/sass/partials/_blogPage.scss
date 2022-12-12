@@ -1,0 +1,261 @@
+@use "variables" as *;
+
+/* ----------------- blog Page styles ----------------- */
+.blogPostContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0;
+
+    h1 {
+        display: flex;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        display: flex;
+    }
+}
+
+.afterSlash {
+
+    a {
+        color: $grey;
+    }
+
+    &::after {
+        content: "/";
+        margin: 0 0.5rem;
+        color: $grey;
+    }
+}
+
+.blogPostDetail {
+    display: flex;   
+    margin: 5% 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $grey230;
+}
+
+.blogPostHalfContainer1 {
+    display: flex;
+    width: 50%;
+}
+
+.blogPostDetailImageContainer {
+    width: 15%;
+    margin-right: 5%;
+
+    img {
+        border-radius: 50%;
+    }
+}
+.blogPostHalfContainer2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.blogPostDetailText {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        text-align: left;
+    }
+
+    p {
+        color: $grey;
+    }
+}
+
+.blogPostDetailContent {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-family: $bodyFont;
+        text-transform: none;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $grey;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+}
+
+.blogPostDetailSocial {
+    display: flex;
+
+    p {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: $grey;
+    }
+}
+
+.blogSvg {
+    margin: 0 0.5rem;
+}
+
+.relatedPostsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+    h2 {
+        font-weight: 700;
+        text-align: left;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $grey230;
+    }
+}
+
+.relatedPostsGallery {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.relatedPostsSingle {
+    display: flex;
+    width: 32%;
+
+    p {
+        margin: 5% 0;
+        text-align: left;
+        text-transform: uppercase;
+        font-family: $montFont;
+    }
+}
+
+.relatedPostsComment {
+    margin: 5% 0;
+}
+
+.relatedPostsCommentContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.relatedPostsCommentSingle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.commentImgContainer {
+    display: flex;
+    width: 8%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    img {
+        object-fit: contain;
+    }
+}
+
+.commentTextContainer {
+    background-color: $grey230;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.userNameContainer {
+    display: flex;
+
+    .userName::after {
+        content: " • ";
+    }
+
+    a {
+        color: $grey;
+    }
+}
+
+.commentContent p {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.commentTime p {
+    font-family: $montFont;
+    text-align: left;
+    padding-top: 1rem;
+    color: $grey;
+}
+
+/* Leave a Comment form styles.*/
+.relatedPostsLeaveComment form {
+    margin: 2rem 0;
+}
+
+.detailCommentContainer {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        color: $black;
+        font-size: 0.8rem;
+        display: flex;
+        border: none;
+        border-bottom: 2px solid $grey230;
+        transition: border-bottom 0.3s;
+        margin-bottom: 1rem;
+        padding-bottom: 0.25rem;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $grey;
+        }
+    }
+
+}
+
+.commentContent {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $grey230;
+    font-size: 0.8rem;
+    transition: border-bottom 0.3s;
+    margin-bottom: 2rem;
+
+    &:focus {
+        border-bottom: 2px solid $grey;
+    }
+}
+
+.detailCommentLine1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    input {
+        width: 32%;
+    }
+}
+
+.commentButton {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $black;
+    border-bottom: 2px solid $grey230;
+    transition: border-bottom 0.3s;
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $grey;
+    }
+}
