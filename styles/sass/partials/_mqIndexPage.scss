@@ -87,12 +87,19 @@
     .contactUsRow2,
     .contactUsRow3 {
         width: 70%;
-        padding-bottom: 2rem;
+        padding: 1rem 0;
         align-items: flex-start;
     }
 
-    .contactUsRow2 ul {
-        margin: 0;
+    
+
+    .contactUsRow2 {
+        border-top: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+
+        ul {
+            margin: 0;
+        }
     }
 
     .contactUsRow3 {
