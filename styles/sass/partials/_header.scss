@@ -52,11 +52,10 @@ header.contact {
 }
 
 
-.navBar a {
-    &:visited{
-        color: $black;
-    }
+.navBar a:visited {
+    color: $black;
 }
+
 .logoText {
     flex-basis: 30%;
 }
@@ -68,9 +67,14 @@ header.contact {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
         text-decoration: underline;
         text-underline-offset: 0.3rem;
         text-decoration-color: transparent;
@@ -81,18 +85,26 @@ header.contact {
         &:focus {
             text-decoration-color: $black;
         }
+
+
+        .shoppingCounter {
+            display: flex;
+            position: absolute;
+            padding: 0 7px;
+            left: 0.7rem;
+            top: 0.7rem;
+            background-color: $lightSage;
+            border-radius: 50%;
+
+        }
     }
 }
 
 /* .svg Styles in basicStyles partial */
 
 .navIcon {
-    width: 1rem;
-    height: 1rem;
-    font-size: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 1.4rem;
 }
 
-// .shoppingContainer {
-//     display: flex;
-//     position: relative;
-// }

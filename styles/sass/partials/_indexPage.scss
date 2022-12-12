@@ -148,12 +148,12 @@
     padding: 10% 0;
 }
 
-.teamGalleryContainer1,
-.teamGalleryContainer2 {
+.teamGalleryContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 1rem;
+    margin-top: 5%;
 }
 
 .textBackground {
@@ -163,24 +163,39 @@
 .teamDoubleSize {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 1rem);
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 300px;
+    width: calc(147% / 3);
+    /* use below .teamSingleSize x value 
+    (2x + y) + 2y + 2x = 100 
+    hence 2x + y = doubleSize = two single size + one space
+    */
+    margin: 0.5rem 0;
+    padding: 5%;
+
+    p {
+        padding-top: 1rem;
+        text-align: left;
+    }
 }
 .teamSingleSize {
     display: flex;
-    width: calc(25% - 1rem);
+    min-width: 150px;
+    width: 23.5%;
+    /* math. 4x + 3y = 100 
+    fix x value here to find y*/
+
     //Align-self is default stretched. putting it center fix img from breaking its aspect ratio
     align-self: center;
+    margin: 0.5rem 0;
 
-    // p {
-    //     display: inline-block;
-    //     text-align: center;
-    // }
-}
-
-.teamSingleSizeFirst {
-    display: flex;
-    width: calc(25% - 1rem);
-    align-self: center;
+    p {
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        align-self: center;
+    }
 }
 
 /* ---------- inquire section --------- */
@@ -273,6 +288,10 @@
 /* ----------------- footer ---------------- */
 footer {
     padding: 5% 0;
-    background-color: $grey;
+    background-color: $black;
     color: $whiteTwo;
+
+    h2 {
+        letter-spacing: 0.5rem;
+    }
 }

@@ -454,9 +454,22 @@ header.contact {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navContainer1 a,
 .navContainer2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   -webkit-text-decoration-color: transparent;
@@ -473,12 +486,24 @@ header.contact {
   -webkit-text-decoration-color: #333333;
           text-decoration-color: #333333;
 }
+.navContainer1 a .shoppingCounter,
+.navContainer2 a .shoppingCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 0 7px;
+  left: 0.7rem;
+  top: 0.7rem;
+  background-color: #c3dab7;
+  border-radius: 50%;
+}
 
 /* .svg Styles in basicStyles partial */
 .navIcon {
-  width: 1rem;
-  height: 1rem;
-  font-size: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  font-size: 1.4rem;
 }
 
 /* =-=-=-=-=- Index page Main -=-=-=-=-= */
@@ -684,8 +709,7 @@ header.contact {
   padding: 10% 0;
 }
 
-.teamGalleryContainer1,
-.teamGalleryContainer2 {
+.teamGalleryContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,6 +719,7 @@ header.contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 1rem;
+  margin-top: 5%;
 }
 
 .textBackground {
@@ -709,23 +734,44 @@ header.contact {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 1rem);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 300px;
+  width: 49%;
+  /* use below .teamSingleSize x value 
+  (2x + y) + 2y + 2x = 100 
+  hence 2x + y = doubleSize = two single size + one space
+  */
+  margin: 0.5rem 0;
+  padding: 5%;
+}
+.teamDoubleSize p {
+  padding-top: 1rem;
+  text-align: left;
 }
 
 .teamSingleSize {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(25% - 1rem);
+  min-width: 150px;
+  width: 23.5%;
+  /* math. 4x + 3y = 100 
+  fix x value here to find y*/
   -ms-flex-item-align: center;
       align-self: center;
+  margin: 0.5rem 0;
 }
-
-.teamSingleSizeFirst {
+.teamSingleSize p {
+  font-size: 1rem;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(25% - 1rem);
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -852,8 +898,11 @@ header.contact {
 /* ----------------- footer ---------------- */
 footer {
   padding: 5% 0;
-  background-color: #626262;
+  background-color: #333333;
   color: #f6f6f6;
+}
+footer h2 {
+  letter-spacing: 0.5rem;
 }
 
 /* Setting up as PC first */
