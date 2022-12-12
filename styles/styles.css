@@ -1669,6 +1669,15 @@ footer h2 {
     margin-top: 10%;
     width: 70%;
   }
+  .brandingTextContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brandingText2 {
+    margin-top: 1rem;
+  }
   .galleryImageContainer {
     width: 70%;
   }
