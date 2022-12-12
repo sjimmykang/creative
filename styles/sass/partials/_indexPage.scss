@@ -231,6 +231,11 @@
 }
 
 /* ---------- contactUs section --------- */
+.contactUs {
+    background-color: $black;
+    color: $white;
+}
+
 .contactUsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -246,8 +251,17 @@
     width: 32%;
 
     h3 {
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
     }
+}
+
+.contactUsSocialMedia {
+    padding-top: 1rem;
+}
+
+.contactUsSvg {
+    color: $white;
+    margin-right: 1rem;
 }
 
 .contactUsRow1 {
@@ -263,6 +277,31 @@
     }
 }
 
+.contactUsRow2 {
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    li {
+        padding-bottom: 0.5rem;
+        
+        &::before {
+            /* using this website info to color bullets:
+            https: //css-tricks.com/finally-it-will-be-easy-to-change-the-color-of-list-bullets/
+             */
+            content: "•";
+        }
+    }
+
+    a {
+        color: $white;
+        font-size: 0.8rem;
+    }
+}
+
 .contactUsRow3 {
     align-items: flex-end;
 
@@ -273,12 +312,23 @@
     }
     label {
         text-align: right;
+        font-size: 0.8rem;
+        padding-bottom: 1.5rem;
+    }
+    .emailContainer {
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: flex-end;
+        width: 100%;
+    
+        input {
+            display: flex;
+            width: 75%;
+            padding-left: 1rem;
+        }
     }
 }
 
-.emailContainer {
-    display: flex;
-}
 
 .subButton {
     background-color: $lightSage;
@@ -290,6 +340,9 @@ footer {
     padding: 5% 0;
     background-color: $black;
     color: $whiteTwo;
+
+    /* $white or $whiteTwo was too much so adjusted down */
+    border-top: 1px solid rgb(70, 70, 70);
 
     h2 {
         letter-spacing: 0.5rem;

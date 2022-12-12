@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -819,6 +820,11 @@ header.contact {
 }
 
 /* ---------- contactUs section --------- */
+.contactUs {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 .contactUsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,7 +852,16 @@ header.contact {
 .contactUsRow1 h3,
 .contactUsRow2 h3,
 .contactUsRow3 h3 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.contactUsSocialMedia {
+  padding-top: 1rem;
+}
+
+.contactUsSvg {
+  color: #ffffff;
+  margin-right: 1rem;
 }
 
 .contactUsRow1 {
@@ -861,6 +876,33 @@ header.contact {
   content: "\a";
   white-space: pre;
   line-break: strict;
+}
+
+.contactUsRow2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+.contactUsRow2 li {
+  padding-bottom: 0.5rem;
+}
+.contactUsRow2 li::before {
+  /* using this website info to color bullets:
+  https: //css-tricks.com/finally-it-will-be-easy-to-change-the-color-of-list-bullets/
+   */
+  content: "•";
+}
+.contactUsRow2 a {
+  color: #ffffff;
+  font-size: 0.8rem;
 }
 
 .contactUsRow3 {
@@ -882,12 +924,25 @@ header.contact {
 }
 .contactUsRow3 label {
   text-align: right;
+  font-size: 0.8rem;
+  padding-bottom: 1.5rem;
 }
-
-.emailContainer {
+.contactUsRow3 .emailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.8rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+.contactUsRow3 .emailContainer input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  padding-left: 1rem;
 }
 
 .subButton {
@@ -900,6 +955,8 @@ footer {
   padding: 5% 0;
   background-color: #333333;
   color: #f6f6f6;
+  /* $white or $whiteTwo was too much so adjusted down */
+  border-top: 1px solid rgb(70, 70, 70);
 }
 footer h2 {
   letter-spacing: 0.5rem;
