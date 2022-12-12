@@ -277,6 +277,10 @@ body {
   margin: 0 auto;
 }
 
+.svg {
+  color: #333333;
+}
+
 html {
   /* setting rem to 20px, assuming default 16px base.
   0.1rem is 2px */

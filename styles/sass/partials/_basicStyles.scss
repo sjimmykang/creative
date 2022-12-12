@@ -1,3 +1,4 @@
+@use "variables" as *;
 
 body {
     // max-width: 1440px;
@@ -16,14 +17,6 @@ body {
     margin: 0 auto;
 }
 
-// .svg {
-//     /* used in Assignment1 as well to color svg icons:
-//     https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
-    
-//     codePen for hex to css filter:
-//     https://codepen.io/sosuke/pen/Pjoqqp
-//     */
-
-//     // filter: invert(20%) sepia(0%) saturate(438%) hue-rotate(198deg) brightness(93%) contrast(97%);
-
-// }
+.svg {
+    color: $black;
+}
