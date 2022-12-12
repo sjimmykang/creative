@@ -110,12 +110,20 @@
 }
 
 .detailIcon {
+    text-align: center;
     display: flex;
-    width: 3rem;
-    height: 3rem;
-    padding: 0.5rem;
-    border: 2px solid $black;
-    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.fa-circle {
+    font-size: 3.5rem;
+}
+
+.innerIcon {
+    font-size: 1.7rem;
 }
 
 .detailIndividualTextContainer {
@@ -255,6 +263,11 @@
 
 .emailContainer {
     display: flex;
+}
+
+.subButton {
+    background-color: $lightSage;
+    padding: 0.5rem;
 }
 
 /* ----------------- footer ---------------- */

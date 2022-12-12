@@ -281,10 +281,10 @@ body {
   https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
 
   codePen for hex to css filter:
-  https: //codepen.io/sosuke/pen/Pjoqqp
+  https://codepen.io/sosuke/pen/Pjoqqp
   */
-  -webkit-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(96%) contrast(87%);
-          filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(96%) contrast(87%);
+  -webkit-filter: invert(20%) sepia(0%) saturate(438%) hue-rotate(198deg) brightness(93%) contrast(97%);
+          filter: invert(20%) sepia(0%) saturate(438%) hue-rotate(198deg) brightness(93%) contrast(97%);
 }
 
 html {
@@ -478,6 +478,7 @@ header.contact {
 .navIcon {
   width: 1rem;
   height: 1rem;
+  font-size: 1rem;
 }
 
 /* =-=-=-=-=- Index page Main -=-=-=-=-= */
@@ -631,14 +632,26 @@ header.contact {
 }
 
 .detailIcon {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.5rem;
-  border: 2px solid #333333;
-  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.fa-circle {
+  font-size: 3.5rem;
+}
+
+.innerIcon {
+  font-size: 1.7rem;
 }
 
 .detailIndividualTextContainer {
@@ -829,6 +842,11 @@ header.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.subButton {
+  background-color: #c3dab7;
+  padding: 0.5rem;
 }
 
 /* ----------------- footer ---------------- */

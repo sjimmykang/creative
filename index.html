@@ -11,6 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
 		rel="stylesheet">
 
+	<!-- FontAwesome kit code -->
+	<script src="https://kit.fontawesome.com/e354ddc77c.js" crossorigin="anonymous"></script>
+
 	<!-- Link style sheet -->
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Creative Homepage</title>
@@ -59,12 +62,15 @@
 							<a href="./pages/contact.html">Contact</a>
 						</li>
 						<li>
-							<!-- all svg icons downloaded from FontAwesome:
+							<!-- all svg icons from FontAwesome:
 							https://fontawesome.com/icons -->
-							<a href=""><img src="./assets/magnifying-glass-solid.svg" alt="navigation search" class="svg navIcon"></a>
+							<a href=""><i class="fa-solid fa-magnifying-glass svg navIcon"></i></a>
 						</li>
 						<li>
-							<a href=""><img src="./assets/bag-shopping-solid.svg" alt="shopping cart page" class="svg navIcon"></a>
+							<a href=""><i class="fa-solid fa-bag-shopping svg navIcon shoppingContainer"></i>
+								<!-- comeback to add counter -->
+
+							</a>
 						</li>
 					</ul>
 				</div> <!-- end of navContainer2 -->
@@ -127,7 +133,16 @@
 			<div class="wrapperSmall detailContainer">
 				<div class="detailHalfContainer">
 					<div class="detailIndividualContainer">
-						<img src="./assets/wand-magic-sparkles-solid.svg" alt="sparkling wand icon" class="svg detailIcon">
+
+						<!-- svg icon stacking from FontAwesome:
+						https://fontawesome.com/docs/web/style/stack
+						 -->
+						 <div class="faContainer">
+							 <span class="fa-stack svg detailIcon">
+								 <i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								 <i class="fa-solid fa-wand-magic-sparkles fa-stack-1x detailIcon innerIcon"></i>
+							 </span>
+						 </div>
 						<div class="detailIndividualTextContainer">
 							<h3>Unique Design</h3>
 							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, officia?</p>
@@ -135,10 +150,13 @@
 					</div>
 
 					<div class="detailIndividualContainer">
-						<!-- modified FontAwesome svg by using svg editor website to make same width and heigh of base file 
-						https://mediamodifier.com/svg-editor# -->
+						<div class="faContainer">
+							<span class="fa-stack svg detailIcon">
+								<i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								<i class="fa-solid fa-map-pin fa-stack-1x detailIcon innerIcon"></i>
+							</span>
+						</div>
 
-						<img src="./assets/Mediamodifier-map-pin.svg" alt="map pin icon" class="svg detailIcon">
 						<div class="detailIndividualTextContainer">
 							<h3>SEO Marketing</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -146,7 +164,13 @@
 					</div>
 
 					<div class="detailIndividualContainer">
-						<img src="./assets/desktop-solid.svg" alt="computer monitor icon" class="svg detailIcon">
+						<div class="faContainer">
+							<span class="fa-stack svg detailIcon">
+								<i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								<i class="fa-solid fa-desktop fa-stack-1x detailIcon innerIcon"></i>
+							</span>
+						</div>
+						
 						<div class="detailIndividualTextContainer">
 							<h3>Retina Ready</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -154,7 +178,13 @@
 					</div>
 	
 					<div class="detailIndividualContainer">
-						<img src="./assets/Mediamodifier-shopping-bag.svg" alt="shopping bag icon" class="svg detailIcon">
+						<div class="faContainer">
+							<span class="fa-stack svg detailIcon">
+								<i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								<i class="fa-solid fa-bag-shopping fa-stack-1x detailIcon innerIcon"></i>
+							</span>
+						</div>
+
 						<div class="detailIndividualTextContainer">
 							<h3>Ecommerce Ready</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -162,7 +192,13 @@
 					</div>
 	
 					<div class="detailIndividualContainer">
-						<img src="./assets/sliders-solid.svg" alt="slider icon" class="svg detailIcon">
+						<div class="faContainer">
+							<span class="fa-stack svg detailIcon">
+								<i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								<i class="fa-solid fa-sliders fa-stack-1x detailIcon innerIcon"></i>
+							</span>
+						</div>
+						
 						<div class="detailIndividualTextContainer">
 							<h3>Advanced Options</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -170,7 +206,13 @@
 					</div>
 	
 					<div class="detailIndividualContainer">
-						<img src="./assets/face-smile-solid.svg" alt="smiling face icon" class="svg detailIcon">
+						<div class="faContainer">
+							<span class="fa-stack svg detailIcon">
+								<i class="fa-regular fa-circle fa-stack-2x detailIcon"></i>
+								<i class="fa-solid fa-face-smile fa-stack-1x detailIcon innerIcon"></i>
+							</span>
+						</div>
+						
 						<div class="detailIndividualTextContainer">
 							<h3>Customizable</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -290,7 +332,7 @@
 							<input type="text" id="emailAddress" name="emailAddress" placeholder="Enter your email">
 
 							<button type="submit" class="subButton">
-								<img src="" alt="sub email button icon" class="subButtonIcon">
+								<i class="fa-solid fa-right-long svg"></i>
 							</button>
 						</div>
 					</form>
