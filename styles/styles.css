@@ -1895,5 +1895,19 @@ footer h2 {
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  .singleImgContainer {
+    display: none;
+  }
+  .singleTextContainer {
+    width: 100%;
+  }
+  .singleTextContainer h3 {
+    font-size: 0.8rem;
+  }
+  .singleTextContainer p {
+    font-size: 0.7rem;
+  }
+}
 /* basic style partial includes base body width and wrapper */
 /* Media Queries */
