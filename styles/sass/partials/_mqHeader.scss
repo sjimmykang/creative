@@ -12,6 +12,14 @@
 
 
 @media (max-width: 800px) {
+    header.blog {
+        background-size: 200%;
+    }
+
+    header.contact {
+        background-size: 190%;
+    }
+
     .navContainer1,
     .navContainer2 {
         display: none;

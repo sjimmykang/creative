@@ -1,0 +1,101 @@
+@use "variables" as *;
+
+@media (max-width: 800px) {
+    .blogPostHalfContainer1 {
+        width: 30%;
+    }
+
+    .blogPostHalfContainer2 {
+        width: 70%;
+    }
+
+    .blogPostDetailText {
+        width: 31%;
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .blogPostDetail {
+        flex-direction: column;
+    }
+
+    .blogPostHalfContainer1 {
+        width: 50%;
+    }
+
+    .blogPostDetailImageContainer {
+        display: none;
+    }
+    
+    .blogPostHalfContainer2 {
+       width: 100%; 
+       padding-top: 1rem;
+    }
+
+    .blogPostDetailText {
+        h3 {
+            font-size: 0.75rem;
+        }
+
+        p {
+            font-size: 0.6rem;
+        }
+    }
+
+    .relatedPostsGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .relatedPostsSingle {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .commentContent {
+        margin: 0;
+    }
+
+    .detailCommentLine1 {
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .commentButton {
+        margin-top: 2rem;
+    }
+
+    .commentImgContainer {
+        display: none;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .userNameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+            font-size: 0.7rem;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .userNameContainer {
+        .userName::after {
+            content: none;
+        }
+    }
+}
