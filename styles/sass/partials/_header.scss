@@ -1,7 +1,13 @@
 /* Navigation CSS from eCommerce code-along */
 @use "variables" as *;
 
+/* non-page specific header and nav styles */
+
 /* Header Styles */
+header {
+    position: relative;
+}
+
 header.home {
     background-image: url(../assets/home-1.jpeg);
     background-size: cover;

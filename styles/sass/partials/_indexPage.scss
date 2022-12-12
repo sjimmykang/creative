@@ -191,6 +191,7 @@
     margin: 0.5rem 0;
 
     p {
+        font-family: $montFont;
         font-size: 1rem;
         text-transform: uppercase;
         display: flex;
@@ -270,11 +271,12 @@
     p {
         text-align: left;
     }
-    span::after {
-        content: "\a";
-        white-space: pre;
-        line-break: strict;
-    }
+}
+
+span::after {
+    content: "\a";
+    white-space: pre;
+    line-break: strict;
 }
 
 .contactUsRow2 {

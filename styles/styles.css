@@ -277,17 +277,6 @@ body {
   margin: 0 auto;
 }
 
-.svg {
-  /* used in Assignment1 as well to color svg icons:
-  https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
-
-  codePen for hex to css filter:
-  https://codepen.io/sosuke/pen/Pjoqqp
-  */
-  -webkit-filter: invert(20%) sepia(0%) saturate(438%) hue-rotate(198deg) brightness(93%) contrast(97%);
-          filter: invert(20%) sepia(0%) saturate(438%) hue-rotate(198deg) brightness(93%) contrast(97%);
-}
-
 html {
   /* setting rem to 20px, assuming default 16px base.
   0.1rem is 2px */
@@ -371,8 +360,17 @@ p {
   letter-spacing: 0.015rem; /* 0.3px */
 }
 
+.wideText {
+  letter-spacing: 0.2rem;
+}
+
 /* Navigation CSS from eCommerce code-along */
+/* non-page specific header and nav styles */
 /* Header Styles */
+header {
+  position: relative;
+}
+
 header.home {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
@@ -768,6 +766,7 @@ header.contact {
   margin: 0.5rem 0;
 }
 .teamSingleSize p {
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   display: -webkit-box;
@@ -872,7 +871,8 @@ header.contact {
 .contactUsRow1 p {
   text-align: left;
 }
-.contactUsRow1 span::after {
+
+span::after {
   content: "\a";
   white-space: pre;
   line-break: strict;
@@ -962,5 +962,85 @@ footer h2 {
   letter-spacing: 0.5rem;
 }
 
+/* --------------- Contact Page Header ---------------- */
+.contactUsTextContainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 2rem;
+  width: 10rem;
+}
+.contactUsTextContainer .horizontalLine {
+  border-bottom: 3px solid #333333;
+  width: 1.5rem;
+}
+.contactUsTextContainer h1 {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* --------------- Contact page detail section styles ---------------- */
+.contactPageDetail h2 {
+  text-align: left;
+}
+.contactPageDetail p {
+  text-align: left;
+  color: #626262;
+}
+.contactPageDetail .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactPageDetailInnerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5% 0;
+}
+
+.detailInnerSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.3333333333%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5%;
+}
+.detailInnerSingle h3 {
+  text-align: left;
+}
+.detailInnerSingle .svg {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.singleCenter {
+  border-left: 2px solid rgb(148, 148, 148);
+  border-right: 2px solid rgb(148, 148, 148);
+}
+
+/* .wideText in typography */
 /* Setting up as PC first */
 /* basic style partial includes base body width and wrapper */
