@@ -1003,6 +1003,19 @@ footer h2 {
           flex-direction: column;
 }
 
+.contactPageDetailText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactPageDetailText h2 {
+  margin-bottom: 1rem;
+}
+
 .contactPageDetailInnerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1037,10 +1050,91 @@ footer h2 {
 }
 
 .singleCenter {
-  border-left: 2px solid rgb(148, 148, 148);
-  border-right: 2px solid rgb(148, 148, 148);
+  border-left: 2px solid #A0A0A0;
+  border-right: 2px solid #A0A0A0;
 }
 
 /* .wideText in typography */
+.contactPageDetailText form {
+  margin: 10% 0;
+}
+
+.detailEmailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detailEmailContainer input {
+  color: #333333;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-bottom: 2px solid #A0A0A0;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+.detailEmailContainer input:focus {
+  outline: none;
+  border-bottom: 2px solid #626262;
+}
+
+.messageContent {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #A0A0A0;
+  font-size: 0.8rem;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+  margin-bottom: 2rem;
+}
+.messageContent:focus {
+  border-bottom: 2px solid #626262;
+}
+
+.detailEmailFirstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.detailEmailFirstLine input {
+  width: 32%;
+}
+
+.messageButton {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #333333;
+  border-bottom: 2px solid #A0A0A0;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+.messageButton:hover, .messageButton:focus {
+  border-bottom: 2px solid #626262;
+}
+
+.imgSpacer {
+  background-image: url(../assets/contact-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
 /* Setting up as PC first */
 /* basic style partial includes base body width and wrapper */
