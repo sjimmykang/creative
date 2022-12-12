@@ -48,6 +48,7 @@ header.contact {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .wrapper {
     display: flex;
@@ -104,6 +105,86 @@ header.contact {
 
         }
     }
+}
+
+.navContainerDropDown {
+    display: none;
+    /* will become dropdown menu for smaller screen size */
+}
+
+.navContainerDropDown input {
+    display: none;
+}
+
+.navMenuContent {
+    position: absolute;
+    display: none;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    li {
+        margin: 0.5rem;
+        display: flex;
+        width: calc(50% - 1rem);
+        justify-content: space-evenly;
+
+        &.homeAnchor {
+            width: calc(100% - 1rem);
+        }
+
+    }
+        a {
+            font-size: 2rem;
+            position: relative;
+            text-decoration: underline;
+            text-underline-offset: 0.8rem;
+            text-decoration-color: transparent;
+            transition: text-decoration-color 0.3s;
+
+            &:hover,
+            &:focus {
+                text-decoration-color: $black;
+            }
+        }
+
+        .navShoppingCounter {
+            display: flex;
+            position: absolute;
+            background-color: $lightSage;
+            padding: 0 0.4rem;
+            border-radius: 50%;
+            right: -1rem;
+            bottom: -0.3rem;
+        }
+
+    .navIcon {
+        font-size: 2rem;
+        text-decoration: underline;
+        text-underline-offset: 0.8rem;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.3s;
+
+        &:hover,
+        &:focus {
+                text-decoration-color: $black;
+            }
+    }
+
+
+}
+
+input:checked~.navMenuContent {
+    display: flex;
+    z-index: 10;
+    top: 7vh;
+    right: 10%;
+    background-color: $white;
+    padding: 5%;
+    width: 80%;
 }
 
 /* .svg Styles in basicStyles partial */

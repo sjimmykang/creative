@@ -64,7 +64,9 @@
 						<li>
 							<!-- all svg icons from FontAwesome:
 							https://fontawesome.com/icons -->
-							<a href=""><i class="fa-solid fa-magnifying-glass svg navIcon"></i></a>
+							<a href="">
+								<i class="fa-solid fa-magnifying-glass svg navIcon"></i>
+							</a>
 						</li>
 						<li>
 							<a href="">
@@ -77,6 +79,56 @@
 						</li>
 					</ul>
 				</div> <!-- end of navContainer2 -->
+
+				<!-- using form checked dropdown navigation. not enough JS currently to use nicer method currently.
+				
+				same method used in my Assignment 1 using below method:
+				https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown -->
+				<div class="navContainerDropDown">
+
+					<input type="checkbox" id="check01" name="menu">
+					<label for="check01" class="navMenuButton">
+						<i class="fa-solid fa-bars svg navIcon"></i>
+					</label>
+
+
+					<!-- navigation menu for smaller screen -->
+					<div class="navMenuContent">
+						<ul>
+							<li class="homeAnchor">
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="./pages/blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="./pages/portfolio.html">Portfolio</a>
+							</li>
+							<li>
+								<a href="./pages/shop.html">Shop</a>
+							</li>
+							<li>
+								<a href="./pages/contact.html">Contact</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-solid fa-magnifying-glass svg navIcon"></i>
+								</a>
+							</li>
+							<li>
+								<a href="./pages/shop.html">
+									<i class="fa-solid fa-bag-shopping svg navIcon shoppingContainer"></i>
+									
+									<div class="navShoppingCounter">
+										<p>2</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- end of navContainerDropDown -->
+
+
 			</div> <!-- end of nav wrapper -->
 		</nav>
 	</header>
@@ -223,9 +275,6 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
 					</div>
-
-					
-
 				</div>
 			</div>
 		</section> <!-- detail section -->

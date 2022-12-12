@@ -1,0 +1,49 @@
+@use "variables" as *;
+/* Setting up as PC first */
+
+
+/* Header Media Queries */
+@media (max-width: 1000px) {
+    .navContainer1,
+    .navContainer2 {
+        flex-basis: 30%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .navContainer1,
+    .navContainer2 {
+        display: none;
+    }
+
+    .navContainerDropDown {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .navContainerDropDown {
+        a {
+            font-size: 1rem;
+        }
+
+        .navIcon {
+            font-size: 1.5rem;
+        }
+
+        .navShoppingCounter {
+            display: flex;
+            position: absolute;
+            background-color: $lightSage;
+            padding: 0 0.45rem;
+            border-radius: 50%;
+            right: -0.4rem;
+            bottom: -0.5rem;
+
+            p {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}

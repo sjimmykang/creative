@@ -412,6 +412,7 @@ header.contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -496,6 +497,94 @@ header.contact {
   top: 0.7rem;
   background-color: #c3dab7;
   border-radius: 50%;
+}
+
+.navContainerDropDown {
+  display: none;
+  /* will become dropdown menu for smaller screen size */
+}
+
+.navContainerDropDown input {
+  display: none;
+}
+
+.navMenuContent {
+  position: absolute;
+  display: none;
+}
+.navMenuContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.navMenuContent li {
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 1rem);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.navMenuContent li.homeAnchor {
+  width: calc(100% - 1rem);
+}
+.navMenuContent a {
+  font-size: 2rem;
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  -webkit-transition: -webkit-text-decoration-color 0.3s;
+  transition: -webkit-text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+}
+.navMenuContent a:hover, .navMenuContent a:focus {
+  -webkit-text-decoration-color: #333333;
+          text-decoration-color: #333333;
+}
+.navMenuContent .navShoppingCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #c3dab7;
+  padding: 0 0.4rem;
+  border-radius: 50%;
+  right: -1rem;
+  bottom: -0.3rem;
+}
+.navMenuContent .navIcon {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  -webkit-transition: -webkit-text-decoration-color 0.3s;
+  transition: -webkit-text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+}
+.navMenuContent .navIcon:hover, .navMenuContent .navIcon:focus {
+  -webkit-text-decoration-color: #333333;
+          text-decoration-color: #333333;
+}
+
+input:checked ~ .navMenuContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  top: 7vh;
+  right: 10%;
+  background-color: #ffffff;
+  padding: 5%;
+  width: 80%;
 }
 
 /* .svg Styles in basicStyles partial */
@@ -758,7 +847,7 @@ header.contact {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-width: 300px;
+  min-width: 240px;
   width: 49%;
   /* use below .teamSingleSize x value 
   (2x + y) + 2y + 2x = 100 
@@ -776,7 +865,7 @@ header.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 150px;
+  min-width: 120px;
   width: 23.5%;
   /* math. 4x + 3y = 100 
   fix x value here to find y*/
@@ -910,6 +999,7 @@ span::after {
           justify-content: space-between;
   margin: 0 auto;
 }
+
 .contactUsRow2 li {
   padding-bottom: 0.5rem;
 }
@@ -946,7 +1036,8 @@ span::after {
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
-.contactUsRow3 .emailContainer {
+
+.emailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,7 +1047,7 @@ span::after {
           justify-content: flex-end;
   width: 100%;
 }
-.contactUsRow3 .emailContainer input {
+.emailContainer input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1477,4 +1568,154 @@ footer h2 {
 }
 
 /* Setting up as PC first */
+/* Header Media Queries */
+@media (max-width: 1000px) {
+  .navContainer1,
+.navContainer2 {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer1,
+.navContainer2 {
+    display: none;
+  }
+  .navContainerDropDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .navContainerDropDown a {
+    font-size: 1rem;
+  }
+  .navContainerDropDown .navIcon {
+    font-size: 1.5rem;
+  }
+  .navContainerDropDown .navShoppingCounter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    background-color: #c3dab7;
+    padding: 0 0.45rem;
+    border-radius: 50%;
+    right: -0.4rem;
+    bottom: -0.5rem;
+  }
+  .navContainerDropDown .navShoppingCounter p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .detail {
+    background-position-x: 50%;
+  }
+  .detailIndividualContainer {
+    width: 100%;
+  }
+  .teamDoubleSize {
+    padding: 2%;
+  }
+  .teamDoubleSize p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 800px) {
+  .detail {
+    background-position-x: 65%;
+  }
+  .detailHalfContainer {
+    width: 90%;
+  }
+  .teamDoubleSize {
+    width: 66%;
+  }
+  .teamSingleSize {
+    width: 32%;
+  }
+}
+@media (max-width: 600px) {
+  .verticalLine {
+    display: none;
+  }
+  .brandingContainer {
+    padding: 10% 0;
+  }
+  .brandingImageContainer {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .galleryImageContainer {
+    width: 70%;
+  }
+  .galleryContent p {
+    font-size: 0.6rem;
+  }
+  .teamDoubleSize {
+    width: 100%;
+  }
+  .teamSingleSize {
+    width: 48.5%;
+  }
+  .inquireHalf1 {
+    padding: 2%;
+  }
+  .inquireHalf1 a {
+    padding: 2%;
+  }
+  .contactUsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactUsRow1,
+.contactUsRow2,
+.contactUsRow3 {
+    width: 70%;
+    padding-bottom: 2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contactUsRow2 ul {
+    margin: 0;
+  }
+  .contactUsRow3 label {
+    text-align: left;
+  }
+  .emailContainer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer h2 {
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .inquire {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inquireHalf1 {
+    width: 100%;
+    padding: 10% 0;
+  }
+  .inquireHalf1 p {
+    margin: 5% 0;
+  }
+  .inquireHalf2 {
+    display: none;
+  }
+}
 /* basic style partial includes base body width and wrapper */
+/* Media Queries */

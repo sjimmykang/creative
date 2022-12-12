@@ -183,7 +183,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    min-width: 300px;
+    min-width: 240px;
     width: calc(147% / 3);
     /* use below .teamSingleSize x value 
     (2x + y) + 2y + 2x = 100 
@@ -199,7 +199,7 @@
 }
 .teamSingleSize {
     display: flex;
-    min-width: 150px;
+    min-width: 120px;
     width: 23.5%;
     /* math. 4x + 3y = 100 
     fix x value here to find y*/
@@ -297,14 +297,17 @@ span::after {
     line-break: strict;
 }
 
+.contactUsRow2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .contactUsRow2 {
     
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
+
+
     li {
         padding-bottom: 0.5rem;
         
@@ -335,17 +338,18 @@ span::after {
         font-size: 0.8rem;
         padding-bottom: 1.5rem;
     }
-    .emailContainer {
+}
+
+.emailContainer {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+    width: 100%;
+
+    input {
         display: flex;
-        font-size: 0.8rem;
-        justify-content: flex-end;
-        width: 100%;
-    
-        input {
-            display: flex;
-            width: 75%;
-            padding-left: 1rem;
-        }
+        width: 75%;
+        padding-left: 1rem;
     }
 }
 
